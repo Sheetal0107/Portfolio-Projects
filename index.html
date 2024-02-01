@@ -92,164 +92,52 @@
             background-color: #83677B;
             height: 1.6px;
         }
-        .container {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            justify-content: center;
-            align-items: center;
+        .header{
+            font-family: "Poppins", cursive;
             text-align: center;
-            grid-gap: 1rem;
-            padding: 1rem 80px;
-            font-size: 0.9rem;
-        }
-
-        .skill-box {
-            padding: 1rem;
-            color: #050505;
-            cursor: pointer;
-            align-items: center;
-            margin-left: -70px;
-        }
-
-        .skill-box:hover>.skill-title:after,
-        .skill-box:hover>.skill-title:before {
-            width: 50px;
-        }
-
-        .skill-box:hover .img {
-            transition: translateY(-10%);
-
-        }
-
-        .skill-box p{
-            width: 85%;
-            margin-left: 35px;
-        }
-
-        .skill-title {
-            padding: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 0.5rem;
-            margin-bottom: 0.5rem;
+            color: #000000;
+            padding: 0.1rem;
             position: relative;
-        }
-
-        .skill-icon1 {
-            width: 100px;
-            height: 100px;
-            z-index: 2;
-            border-radius: 50px;
-        }
-
-        .skill-icon2 {
-            width: 100px;
-            height: 100px;
-            z-index: 2;
-            margin-top: 2px;
-            border-radius: 50px;
-        }
-
-        .skill-icon3 {
-            width: 100px;
-            height: 100px;
-            border-radius: 50px;
-            z-index: 2;
-        }
-
-        .skill-icon4 {
-            width: 100px;
-            height: 100px;
-            z-index: 2;
-            border-radius: 50px;
-        }
-
-        .skill-icon5 {
-            width: 100px;
-            height: 100px;
-            z-index: 2;
-            margin-top: 2px;
-            border-radius: 50px;
-        }
-
-        .skill-icon6 {
-            width: 100px;
-            height: 100px;
-            border-radius: 20px;
-            z-index: 2;
-            border-radius: 50px;
-        }
-        .skill-title:after {
-            content: '';
-            position: absolute;
-            top: 0;
-            right: 50%;
-            width: 0;
-            height: 4px;
-            border-radius: 2px 0 0 2px;
-            background-color: #2ecc71;
-            transition: 0.5s;
-        }
-
-        .skill-title:before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 50%;
-            width: 0;
-            height: 4px;
-            border-radius: 2px 0 0 2px;
-            background-color: #2ecc71;
-            transition: 0.5s;
-        }
-
-        .skill-title h3 {
-            color: #fff;
-        }
-
-        .img {
-            width: 100px;
-            height: 100px;
-            position: relative;
-            border-radius: 60px;
-            background-color: #fff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            transition: 0.5s;
-            margin-left: 130px;
-        }
-
-        .img:after {
-            content: '';
-            position: absolute;
-            top: 0px;
-            left: 0px;
-            width: 50%;
-            height: 100px;
-            background: rgba(100, 100, 100, 0.3);
-            border-radius: 45px 0 0 45px;
-
-        }
-
-        .header1 {
-            font-size: 2.5rem;
-            text-align: center;
-            padding: 10px;
-        }
-
-        .demo1 {
             font-size: 1.5rem;
-            text-align: center;
-            text-decoration: none;
-            color: #fff;
+            margin: 20px;
+            font-weight: bold;
         }
 
-        .demo1:hover {
-            font-size: 1.55rem;
+        .table {
+            padding: 10px 50px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th {
+            border: 1px solid #000000;
             text-align: center;
+            padding: 8px;
+            background-color: #A6607C;
+        }
+
+        td {
+            border: 1px solid #000000;
+            text-align: center;
+            padding: 8px;
+        }
+
+        td li{
+            text-align: left;
+        }
+
+        table a {
             text-decoration: none;
-            color: rgb(219, 41, 101);
+            display: flex;
+            align-items: center;
+            color: #000000;
+        }
+
+        table a:hover {
+            color: #ae5685;
         }
         
 
@@ -438,72 +326,105 @@
     </nav>
 </header>
 <main>
-    <div class="header"><u>MY PROJECTS</u></div>
-    <div class="container">
-
-        <div class="skill-box">
-            <div class="img">
-                <img src="wordcounter.jpg" class="skill-icon1">
-            </div>
-            <h3>WordCounter</h3>
-            <div class="skill-title"></div>
-            <a class="demo1" href="https://sheetal0107.github.io/WordCounterandSpellCheck/" target="_blank">Visit</a>
-            <p>This is a website that will help you count the number of letters or words in a paragraph. This can store a maximum of 250 words.
-                This will also indicate if you write a sentence with wrong grammar or a wrong spelling.
-                </p>
-        </div>
-
-        <div class="skill-box">
-            <div class="img">
-                <img src="countdown-timer.jpg" class="skill-icon2">
-            </div>
-            <h3>Countdown Timer</h3>
-            <div class="skill-title">
-            </div>
-            <a class="demo1" href="" target="_blank">Visit</a>
-            <p>Sleek countdown timer project for accurate and visually engaging time management. Access your countdowns across various devices, including desktops, smartphones, and tablets, with seamless synchronization.</p>
-        </div>
-        <div class="skill-box">
-            <div class="img">
-                <img src="stopwatch.jpg" class="skill-icon3">
-            </div>
-            <h3>StopWatch</h3>
-            <div class="skill-title">
-            </div>
-            <a class="demo1" href="" target="_blank">Visit</a>
-            <p>Customizable stopwatch project measuring time precisely, enhancing user time-tracking experiences.The interface is designed for ease of use, with large, clear displays and intuitive controls, allowing effortless start, stop, and reset functionalities.</p>
-        </div>
-
-        <div class="skill-box">
-            <div class="img">
-                <img src="calendar.png" class="skill-icon4">
-            </div>
-            <h3>Calendar</h3>
-            <div class="skill-title"></div>
-            <a class="demo1" href="" target="_blank">VISIT</a>
-            <p>HTML-based calendar providing an intuitive interface for date navigation and scheduling.</p>
-        </div>
-
-        <div class="skill-box">
-            <div class="img">
-                <img src="clock.jpg" class="skill-icon5">
-            </div>
-            <h3>Clock</h3>
-            <div class="skill-title"></div>
-            <a class="demo1" href="" target="_blank">VISIT</a>
-            <p>HTML and JavaScript digital clock for real-time and accurate timekeeping.</p>
-        </div>
-
-        <div class="skill-box">
-            <div class="img">
-                <img src="sos.jpg" class="skill-icon6">
-            </div>
-            <h3>SOS</h3>
-            <div class="skill-title"></div>
-            <a class="demo1" href="" target="_blank">Visit</a>
-            <p>SOS app is a app for every person, if a person needs any help or is in any emergency he/she can shake his/her phone and his/her location with a message will go to the imported contacts in the app.</p>
-        </div>
-
+    <div class="header"><u>My Projects</u></div>
+    <div class="table">
+        <table>
+            <tr>
+                <th><u>Sl.no.</u></th>
+                <th><u>Project Title</u></th>
+                <th><u>Project Description</u></th>
+                <th><u>Tools Used</u></th>
+                <th><u>Link</u></th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>A Navigation Website<br>
+                    Web Development Project</td>
+                <td>
+                    <ul>
+                        <li>
+                            Everyone makes clock or stopwatch etc. <br> What's new in this website?<br>It is that we have implemented everything <br>in one website.
+                        </li>
+                        <li>
+                            It contains stopwatch, clock, calendar,  <br>countdown and also it has a option to <br> reach out to my portfolio.
+                        </li>
+                    </ul>
+                </td>
+                <td>
+                    <b>Languages Used</b>
+                    <ul>
+                        <li>
+                            HTML
+                        </li>
+                        <li>
+                            CSS
+                        </li>
+                        <li>
+                            JavaScript
+                        </li>
+                    </ul>
+                    <b>IDEs Used</b>
+                    <ul>
+                        <li>
+                            Visual Studio Code
+                        </li>
+                    </ul>
+                    <b>Hosting Platform</b>
+                    <ul>
+                        <li>
+                            GitHub
+                        </li>
+                    </ul>
+                </td>
+                <td>
+                    <a href="https://sheetal0107.github.io/all-in-one/" target="_blank">Click Here</a>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Word Counter and Spell Check<br>
+                    Web Development Project</td>
+                <td>
+                    <ul>
+                        <li>
+                            This is a website that will help you count<br> the number of letters or words in a<br> paragraph. This can store a <br>maximum of 250 words.
+                        </li>
+                        <li>
+                            This will also indicate if you write a sentence<br> with wrong grammar or a wrong spelling.
+                        </li>
+                    </ul>
+                </td>
+                <td>
+                    <b>Languages Used</b>
+                    <ul>
+                        <li>
+                            HTML
+                        </li>
+                        <li>
+                            CSS
+                        </li>
+                        <li>
+                            JavaScript
+                        </li>
+                    </ul>
+                    <b>IDEs Used</b>
+                    <ul>
+                        <li>
+                            Visual Studio Code
+                        </li>
+                    </ul>
+                    <b>Hosting Platform</b>
+                    <ul>
+                        <li>
+                            GitHub
+                        </li>
+                    </ul>
+                </td>
+                <td>
+                    <a href="https://sheetal0107.github.io/WordCounterandSpellCheck/" target="_blank">Click Here</a>
+                </td>
+            </tr>
+        </table>
     </div>
 </main>
 <footer>
